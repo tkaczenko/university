@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+    <comment>Это файл настроек Java</comment>
+    <entry key="open_file">Открыть файл</entry>
+    <entry key="key">Ключи шифрования</entry>
+    <entry key="encrypt">Шифровать</entry>
+    <entry key="decrypt">Разшифровать</entry>
+    <entry key="text_files">Текстовые файлы</entry>
+    <entry key="read_error">Ошибка чтения файла</entry>
+    <entry key="information">Информация</entry>
+    <entry key="save_file">Сохранить файл</entry>
+    <entry key="app_name">TextAnalyst</entry>
+    <entry key="range_text">Введите целое число</entry>
+    <entry key="input_err">Ошибка ввода</entry>
+    <entry key="input_mess">Пожалуйста, введите целое число для параметра</entry>
+</properties>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+    <comment>Це файл налаштувань Java</comment>
+    <entry key="open_file">Відкрити файл</entry>
+    <entry key="key">Ключ шифрування</entry>
+    <entry key="encrypt">Шифрувати</entry>
+    <entry key="decrypt">Розшифрувати</entry>
+    <entry key="text_files">Текстові файли</entry>
+    <entry key="read_error">Помилка читання файлу</entry>
+    <entry key="information">Інформація</entry>
+    <entry key="save_file">Зберегти файл</entry>
+    <entry key="app_name">TextAnalyst</entry>
+    <entry key="range_text">Введіть ціле число</entry>
+    <entry key="input_err">Помилка введення</entry>
+    <entry key="input_mess">Будь ласка, введіть ціле число для параметра</entry>
+</properties>
