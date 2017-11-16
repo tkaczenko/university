@@ -1,4 +1,4 @@
-package io.github.tkaczenko;
+package io.github.tkaczenko.patterns.task1;
 
 import io.github.tkaczenko.patterns.task1.bridge.AutoVehicle;
 import io.github.tkaczenko.patterns.task1.bridge.BikeVehicle;

@@ -1,0 +1,19 @@
+group 'andriy.tkachenko'
+version '1.0'
+
+apply plugin: 'java'
+apply plugin: 'war'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+    compile group: 'org.hibernate.javax.persistence', name: 'hibernate-jpa-2.1-api', version: '1.0.0.Final'
+    compile group: 'javax', name: 'javaee-api', version: '7.0'
+    runtime group: 'org.postgresql', name: 'postgresql', version: '9.4.1211.jre7'
+    runtime group: 'org.hibernate', name: 'hibernate-core', version: '5.2.4.Final'
+}
