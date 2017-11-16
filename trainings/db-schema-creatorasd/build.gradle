@@ -1,0 +1,43 @@
+group 'JDBCApp'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'application'
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+mainClassName = "DBApp"
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile group: 'org.postgresql', name: 'postgresql', version: '9.4.1211.jre7'
+    compile group: 'org.freemarker', name: 'freemarker', version: '2.3.25-incubating'
+}
+
+run {
+    standardInput = System.in
+    if ( project.hasProperty("appArgs") ) {
+        args Eval.me(appArgs)
+    }
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'DBApp'
+    }
+    from configurations.runtime.asFileTree.files.collect { zipTree(it) }
+}
+
+task fatJar(type: Jar) {
+    manifest {
+        attributes 'Main-Class': 'DBApp'
+    }
+    baseName = project.name + '-all'
+    //from files(sourceSets.main.output.classesDir)
+    from configurations.runtime.asFileTree.files.collect { zipTree(it) }
+    //from('src/main') { include 'resources/templates/*.ftl' }
+    with jar
+}

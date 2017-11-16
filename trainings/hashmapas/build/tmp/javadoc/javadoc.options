@@ -1,0 +1,6 @@
+-classpath '/home/tkaczenko/Work/git/week2/build/classes/main:/home/tkaczenko/Work/git/week2/build/resources/main'
+-d '/home/tkaczenko/Work/git/week2/build/docs/javadoc'
+-doctitle 'week2 0.1 API'
+-quiet 
+-windowtitle 'week2 0.1 API'
+'/home/tkaczenko/Work/git/week2/src/main/java/MyMap/MyMap.java'
