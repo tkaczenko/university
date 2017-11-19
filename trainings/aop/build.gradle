@@ -13,7 +13,7 @@ buildscript {
         }
     }
     dependencies {
-        classpat    h("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
         classpath "nl.eveoh:gradle-aspectj:1.6"
     }
 }

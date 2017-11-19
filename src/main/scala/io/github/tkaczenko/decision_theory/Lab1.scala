@@ -2,7 +2,7 @@ package io.github.tkaczenko.decision_theory
 
 object Lab1 extends App {
   private def f(s: Int, x: Int): Double =
-    s * 1000 - x * 15000 - 20000 - (s / 10 - x) * 2000 * 365
+    math.min(s / x, 6) * x - (40 + math.max(x - 600, 0) / 100 * 10)
 
   override def main(args: Array[String]): Unit = {
     val criteria = Criteria()

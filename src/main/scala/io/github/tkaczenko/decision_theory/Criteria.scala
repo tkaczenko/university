@@ -1,11 +1,11 @@
 package io.github.tkaczenko.decision_theory
 
-case class Criteria(minS: Int = 100,
-               maxS: Int = 250,
-               hS: Int = 10,
-               minX: Int = 10,
-               maxX: Int = 25,
-               hX: Int = 1) {
+case class Criteria(minS: Int = 2000,
+               maxS: Int = 3000,
+               hS: Int = 100,
+               minX: Int = 400,
+               maxX: Int = 700,
+               hX: Int = 100) {
   private var _nSize = (maxX - minX) / hX + 1
   private var _mSize = (maxS - minS) / hS + 1
 
