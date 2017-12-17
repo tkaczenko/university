@@ -11,10 +11,7 @@ object Lab4 extends App {
     var newY = 0
     res.append(string.Format("t = {0:0.00}\tY = {1:0.000}\tY' =  {2:0.000}", t, Y, newY))
     var i = 0
-    while (i
-    <- 0 until n
-    )
-    {
+    while (i<- 0 until n) {
       Y = Yn + Yn0 * step
       newY = Yn0 + step * (sigma * math.sin(w * t) - b1 * Yn0 - b2 * Yn0 * math.abs(Yn0) - c1 * Yn - c3 * (Yn * Yn * Yn))
       t = t + step
@@ -37,11 +34,11 @@ object Lab4 extends App {
     val epsion: Double = 0.05
     val sigma: Double = 0.070
     val y0: Double = 0.179
-    println("Введите шаг: ");
-    double step = (StdIn.readLine().replace(".", ","));
+    println("Введите шаг: ")
+    double step = (StdIn.readLine().replace(".", ","))
     EilerMethod(y0, step, "n1.txt");
-    println("Расчитаные значения y(t) и y'(t) для {0} значений сохранены в файл n1.txt", (int) (180 / step));
+    println("Расчитаные значения y(t) и y'(t) для {0} значений сохранены в файл n1.txt", (int) (180 / step))
     EilerMethod(y0, step / 2, "n2.txt");
-    println("Расчитаные значения y(t) и y'(t) для {0} значений сохранены в файл n2.txt", (int) (180 / (step / 2)));
+    println("Расчитаные значения y(t) и y'(t) для {0} значений сохранены в файл n2.txt", (int) (180 / (step / 2)))
   }
 }
